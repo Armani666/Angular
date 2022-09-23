@@ -8,12 +8,14 @@ import { RestaComponent } from './calculos/resta/resta.component';
 
 import { FormsModule  } from '@angular/forms';
 import { ProductlistComponent } from './product/productlist/productlist.component';
+import { ProductoFilterPipe } from './product/producto-filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     SumaComponent,
     RestaComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    ProductoFilterPipe
   ],
   imports: [
     BrowserModule,
