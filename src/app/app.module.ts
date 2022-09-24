@@ -9,18 +9,23 @@ import { RestaComponent } from './calculos/resta/resta.component';
 import { FormsModule  } from '@angular/forms';
 import { ProductlistComponent } from './product/productlist/productlist.component';
 import { ProductoFilterPipe } from './product/producto-filter.pipe';
+import { MenuComponent } from './menu/menu.component';
+import { BrowserAnimationModule, BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
     SumaComponent,
     RestaComponent,
     ProductlistComponent,
-    ProductoFilterPipe
+    ProductoFilterPipe,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

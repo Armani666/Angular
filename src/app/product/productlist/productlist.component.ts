@@ -9,6 +9,7 @@ import { IProducto } from '../producto';
 export class ProductlistComponent implements OnInit {
   muestraImg:boolean=false;
   listfilter:string='';
+  
 
   constructor() { }
   muestraImagen(){
