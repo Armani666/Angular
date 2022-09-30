@@ -1,33 +1,11 @@
-<!--  <h1>Hola Mundo</h1>
-  <p>Ramses Carrillo</p>
-  
-  {{title}}
-  
-  <div>La suma de 2 + 2 es = {{2+2}}</div>
-  <div> El doble de 3 es : {{duplicarValor(3)}}</div>
-  <br>
-  <hr>
-  <br>
-  <div>
-    {{pelicula.titulo}}
-  </div>
-  <div>
-    {{pelicula.fechalanzamiento | date:"dd-MM-yy"}}
-  </div>
-  <div>
-    {{pelicula.precio | currency}}
-  </div>
-  -->
-<hr>
-<br>
-<!-- <app-suma></app-suma> -->
-<hr>
-<br><!-- <app-resta></app-resta> -->
-<br>
+
 <app-menu>
-  <div class="cointainer">
-    <div class="row"></div>
-    <app-productlist></app-productlist>
-  </div>
+  
 </app-menu>
+<div class="cointainer">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+ 
+</div>
 

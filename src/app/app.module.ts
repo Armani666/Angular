@@ -10,8 +10,10 @@ import { FormsModule  } from '@angular/forms';
 import { ProductlistComponent } from './product/productlist/productlist.component';
 import { ProductoFilterPipe } from './product/producto-filter.pipe';
 import { MenuComponent } from './menu/menu.component';
-import { BrowserAnimationModule, BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from "@angular/material/icon";
+import { TablasComponent } from './calculos/tablas/tablas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,13 +21,16 @@ import { MatToolbarModule} from '@angular/material/toolbar';
     RestaComponent,
     ProductlistComponent,
     ProductoFilterPipe,
-    MenuComponent
+    MenuComponent,
+    TablasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

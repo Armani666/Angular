@@ -25,7 +25,7 @@ export class SumaComponent implements OnInit {
 
   operacion(){
     if(this.opcion=='suma') {
-      this.total=parseInt(this.numero1) * parseInt (this.numero2);
+      this.total=parseInt(this.numero1) + parseInt (this.numero2);
     } else if ( this.opcion=='resta'){
       this.total= parseInt(this.numero1) - parseInt(this.numero2) ;
     } else if (this.opcion=='multiplicacion'){
