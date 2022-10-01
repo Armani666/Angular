@@ -1,0 +1,104 @@
+<div class="card btn btn-primary"> <h3> Cinepolis</h3>
+    <div class="card">
+        <div class="card">
+  <div class="row">
+    <div class="card">
+        <div class="row card-header justify-content-center align-items-center text-center">
+    <div class=" card bg-primary text-white shadow-1-strong col-5 p-4">
+      <div class="row g-3 form-group mt-2">
+        <div class="col-4">
+          <label for="" class="form-control-label">Nombre</label>
+        </div>
+        <div class="col-6">
+          <input
+            type="text"
+            [(ngModel)]="nombre"
+            class="form-control"
+            name="nombre1"
+          />
+        </div>
+      </div>
+
+      <div class="row g-3 form-group mt-2">
+        <div class="col-4">
+          <label for="" class="form-control-label"
+            >Cantidad de Compradores</label
+          >
+        </div>
+        <div class="col-6">
+          <input
+            type="text"
+            [(ngModel)]="cantCompra"
+            class="form-control"
+            name="cantidadCompradores"
+          />
+        </div>
+      </div>
+      <div class="row g-3 mt-1 align-items-center">
+        <div class="mb-2">
+          <label for="siono" class="col-2">Maneja Tarjeta:</label>
+          <input
+            (click)="tarjeCineValor(true)"
+            type="radio"
+            name="tarjeta"
+            id="sip"
+            value="si"
+          />Si
+          <input
+            (click)="tarjeCineValor(false)"
+            type="radio"
+            name="tarjeta"
+            id="no"
+            value="no"
+          />No
+        </div>
+      </div>
+      <div class="row form-group mt-2">
+        <div class="col-4">
+          <label for="" class="form-control-label">Cantidad de boleta</label>
+        </div>
+        <div class="col-6">
+          <input
+            class="b-primary"
+            type="text"
+            [(ngModel)]="cantBole"
+            class="form-control"
+            name="cantidadBoletos"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class=" row col-5 p-3 ">
+        <div class="card">
+            <div class=" justify-content-center ">
+      <div class="row g-3 form-group mt-2">
+        <div class="col-4">
+          <label for="" class="form-control-label">Valor a Pagar</label>
+        </div>
+        <div class="col-6">
+          <input
+            type="text"
+            [(ngModel)]="total"
+            class="form-control"
+            name="total"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 align-items-center mt-4 justify-content-center ">
+            <div class=" col-5 p-4">
+
+            <div class="  justify-content-center align-items-center text-center">
+      <div class="col-12 enter">
+        <button class="btn btn-primary " type="button" (click)="proceso()">
+          Procesar
+        </button>
+        <button class="btn btn-danger" type="button">salir</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

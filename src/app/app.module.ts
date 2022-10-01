@@ -14,6 +14,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
 import { TablasComponent } from './calculos/tablas/tablas.component';
+import { CinepolisComponent } from './calculos/cinepolis/cinepolis.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { TablasComponent } from './calculos/tablas/tablas.component';
     ProductlistComponent,
     ProductoFilterPipe,
     MenuComponent,
-    TablasComponent
+    TablasComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
